@@ -1,0 +1,10 @@
+services:
+  mongo:
+    image: mongo:8.2.7
+    container_name: mycontacts_mongodb
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
